@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020202"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/cancel_button"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:onClick="CancelButtonOnClick"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <Space
+            android:id="@+id/cancel_space"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="　ユーザ登録"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/profile_save_button"
+            android:layout_width="83dp"
+            android:layout_height="73dp"
+            android:backgroundTint="@android:color/black"
+            android:onClick="saveProfileOnClick"
+            android:text="保存"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/gradient_underline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/profile_image_view"
+        android:layout_width="143dp"
+        android:layout_height="143dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center_vertical"
+        android:text="ユーザ名"
+        android:textSize="18sp"
+        android:textColor="#C1BFBF" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="ユーザー名を入力してください"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80808080"
+        android:maxLength="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/text_color"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center_vertical"
+        android:text="文字の色"
+        android:textSize="18sp"
+        android:textColor="#C1BFBF" />
+
+    <Button
+        android:id="@+id/text_color_picker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#000000"
+        android:foreground="@drawable/button_border"
+        android:onClick="textColorPickerOnClick" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/object_color"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center_vertical"
+        android:text="オブジェクトの色"
+        android:textSize="18sp"
+        android:textColor="#C1BFBF" />
+
+    <Button
+        android:id="@+id/object_color_picker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/button_border"
+        android:onClick="objectColorPickerOnClick" />
+
+</LinearLayout>

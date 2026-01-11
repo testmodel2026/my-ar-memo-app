@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/smile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle"
+                    android:clipToOutline="true"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/smile"
+                    android:onClick="emojiSelectedButtonOnClick"/>
+
+                <ImageButton
+                    android:id="@+id/wow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle"
+                    android:clipToOutline="true"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/wow"
+                    android:onClick="emojiSelectedButtonOnClick"/>
+
+                <ImageButton
+                    android:id="@+id/angry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle"
+                    android:clipToOutline="true"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/angry"
+                    android:onClick="emojiSelectedButtonOnClick"/>
+
+                <ImageButton
+                    android:id="@+id/love"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle"
+                    android:clipToOutline="true"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/love"
+                    android:onClick="emojiSelectedButtonOnClick"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

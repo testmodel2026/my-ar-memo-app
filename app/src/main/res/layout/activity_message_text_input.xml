@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shimizu.ar.core.ar_message.kotlin.message_text_input.MessageTextInputActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cancel_button"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/cardview_shadow_end_color"
+                android:onClick="CancelButtonOnClick"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <Space
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/text_color_picker"
+                android:layout_width="52dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:onClick="textColorPickerOnClick"
+                android:scaleType="fitCenter"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="A"
+                android:textColor="#FFFFFF"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/object_color_picker"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="7dp"
+                android:background="#00FFFF"
+                android:foreground="@drawable/button_border"
+                android:onClick="objectColorPickerOnClick" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/post_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#00BCD4"
+                android:onClick="PostMessageTextOnClick"
+                android:text="投稿する" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/input_message_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@null"
+            android:hint="なにをメモしますか？"
+            android:textColorHint="#80808080"
+            android:maxLength="50" />
+
+    </LinearLayout>
+
+</RelativeLayout>

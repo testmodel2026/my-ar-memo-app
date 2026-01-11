@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2021 Google LLC
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<resources>
+  <string translatable="false" name="app_name">AR Memos</string>
+  <string translatable="false" name="depth_use_explanation">対応デバイスで深度を有効にすると、仮想オブジェクトが現実世界に溶け込みやすくなります。</string>
+  <string translatable="false" name="button_text_enable_depth">有効</string>
+  <string translatable="false" name="button_text_disable_depth">無効</string>
+  <string translatable="false" name="options_title_with_depth">お使いのデバイスは深度を利用できます</string>
+  <string translatable="false" name="options_title_without_depth">お使いのデバイスは深度を利用できません</string>
+  <string translatable="false" name="done">了解</string>
+  <string-array translatable="false" name="depth_options_array">
+    <item>深度を有効</item>
+    <item>深度マップを有効</item>
+  </string-array>
+
+  <string translatable="false" name="searching_planes">平面を検出しています。</string>
+  <string translatable="false" name="waiting_taps">画面を長押してください。</string>
+  <string translatable="false" name="send_object">もう一度画面を長押で投稿されます。</string>
+
+</resources>
