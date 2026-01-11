@@ -1,5 +1,6 @@
 ARCore + Geospatial APIを利用して拡張世界にコンテンツを投稿したり、他者が投稿したコンテンツを閲覧することが可能。
-
+コードとやり方を勉強する用
+以下が制作者様
 ![Screenshot_20241208-135325 (1)](https://github.com/user-attachments/assets/0ce8cfdd-0ded-42be-ae99-9348ae6aa5d0)
 
 細かな詳細は以下に記載。
